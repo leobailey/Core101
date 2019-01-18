@@ -6,13 +6,11 @@
     <H1>Hello World</H1>
     <p>Who knew we would get his far!</p>
     <p>Time for better work!</p>
-    <div id="app"></div>
-    <H2>in the app but before the template ....</H2>
-    <script type="text/x-template" id="app-template">
-        <h2>Well here goes nothing!"</h2>
-        <p id="myData"></p>
-    </script>
-    <script src="cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    <div id="app">
+        {{ message }}
+    </div>
+    <!-- development version, includes helpful console warnings -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="app.js"></script>
 </body>
 </html>

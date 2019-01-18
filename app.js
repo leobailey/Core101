@@ -1,5 +1,6 @@
-new Vue({
-    el:'#app',
-    template: "#app-template",
-    data:()=>({myData:'here is my data'})
-})
+var app = new Vue({
+    el: '#app',
+    data: {
+      message: 'Hello from Vue!'
+    }
+  })
