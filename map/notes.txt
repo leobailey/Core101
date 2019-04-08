@@ -1,0 +1,83 @@
+﻿1. HTML added in google fonts
+This was so we could use open sans 
+
+2. HTML Added in JQUERY 
+This was so we could do the test to see if the doc was loaded before doing the javascript stuff
+
+3. CSS Abstracted into a seperate file
+This is to keep the HTML tidy
+
+4. SCRIPT Abstracted this into a seperate file 
+This is to keep the HTML tidy
+
+5. HTML Removed MapBox Code
+
+6. HTML Implement LEAFLET css and script
+
+7. HTML Added Leaflet init code in HTML page
+
+8. SCRIPT moved the inline Leaflet init script to the javascript file to keep HTML clean
+
+9. HTML refactored the link to JQUERY to pull in from the jquery website
+The old code was expecting a local file
+
+10. Wrapped the map script in a JQUERY READ clause
+This is so the javascript to manipulate the dom only runs once the DOM is ready to be manipulated
+
+10. SCRIPT integrated the CartoDB.DarkMatterNoLabels Tiles
+This was to get a dark map with no labels
+
+11. HTML Included more recent MAPBOX references
+
+12. SCRIPT Implemented the MAPBOX tiles
+To get mapbox to work i had to 1)add in my token and 2) REMOVE Leaflet script reference
+
+13. Remove Leaflet code reference
+
+14 Try using the dark mapbox tiles
+Did it using mapbox.dark
+
+15. Developed a custom style layer called Dark_basic
+This was developed in MapBox Studio to remove text and leave a simple dark map
+
+16. Integrated Dark_basic Style
+by adding a MapBox Layer Style that references the new style
+
+17. Define a Default centre point and zoom level
+Lat(vert):18.815 | Long(horiz):18.140 | Zoom : 3 | Code .setView([18.815, 18.140], 3);
+
+18. Place a marker
+Used the standard Leaflet marker
+
+19. Place an animated marker
+Took animation code from the http://piratefsh.github.io/how-to/2015/10/16/animating-leaflet-markers.html
+
+20. Recreate the red. growing. fading. shrinking animation of the demo
+Done with white
+
+Need to see if we can remove markers
+Need to figure out how to add multiple markers 
+Need to test multiple markers
+
+Make country borders fainter
+
+Try reading in markers from JSON or GEOJSON
+
+Try reading in geojson form an external file
+
+Figure out how we "Push" markers form a dynamic source.
+
+
+
+
+
+Place a market
+
+
+
+try an animated market
+
+Try reading in markers from JSON or GEOJSON
+
+
+
