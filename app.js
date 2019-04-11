@@ -1,18 +1,11 @@
+const express = require('express');
 
-/* var myVue = new Vue({
-    el: '#vueapp',
-    data: {
-      message: 'Hello from Vue! we meet again!!'
-    }
-  }) */
+const app = express();
+const port = process.env.PORT || 3000;
+app.get('/', (req, res) => {
+  res.send('Welcome to my API');
+});
 
-  var express = require('express');
-  var app  = express();
-  var port = process.env.PORT || 3000
-  app.get('/', (req, res) => {
-    res.send('Welcome to my API');
-  })
-
-  app.listen(port, ()=>{
-    console.log('Running on port ' + port);
-  });
+app.listen(port, () => {
+  console.log('Running on port ' + port);
+});
